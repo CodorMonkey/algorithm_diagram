@@ -14,9 +14,3 @@ def binary_search(item_list, item):
             # 中间元素大于目标元素，继续查找[low,mid)之间的元素
             high = mid - 1
     return None
-
-
-num_list = [1, 3, 5, 6, 7]
-print(binary_search(num_list, 3))
-print(binary_search(num_list, 4))
-print(binary_search(num_list, 5))
