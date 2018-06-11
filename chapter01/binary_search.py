@@ -16,7 +16,8 @@ def binary_search(item_list, item):
     return None
 
 
-num_list = [1, 3, 5, 6, 7]
-print(binary_search(num_list, 3))
-print(binary_search(num_list, 4))
-print(binary_search(num_list, 5))
+if __name__ == '__main__':
+    num_list = [1, 3, 5, 6, 7]
+    print(binary_search(num_list, 3))
+    print(binary_search(num_list, 4))
+    print(binary_search(num_list, 5))
