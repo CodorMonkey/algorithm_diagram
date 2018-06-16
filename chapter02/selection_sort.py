@@ -1,3 +1,8 @@
+import random
+
+from common.log_time import log_time
+
+
 def find_smallest_index(arr):
     smallest_index = 0
     for i in range(len(arr)):
@@ -6,6 +11,7 @@ def find_smallest_index(arr):
     return smallest_index
 
 
+@log_time
 def selection_sort(arr):
     arr_result = []
     for i in range(len(arr)):
@@ -15,5 +21,10 @@ def selection_sort(arr):
 
 
 if __name__ == '__main__':
-    arr = [11, 80, 5, 4, 324, 3431]
-    print(selection_sort(arr))
+    nums = [x for x in range(10000, 0, -1)]
+    random.shuffle(nums)
+    selection_sort(nums)
+
+    nums = [x for x in range(10000)]
+    random.shuffle(nums)
+    selection_sort(nums)
